@@ -6,7 +6,8 @@
     "deploy": "yarn hardhat deploy",
     "deploy-rinkeby": "yarn hardhat deploy --network rinkeby",
     "compile": "yarn hardhat compile",
-    "run": "yarn hardhat run"
+    "run": "yarn hardhat run",
+    "coverage": "yarn hardhat coverage"
   },
   "devDependencies": {
     "@chainlink/contracts": "^0.4.1",
