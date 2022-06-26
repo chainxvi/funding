@@ -40,7 +40,7 @@ contract Funding {
   /// @dev Gets the current price of ETH in USD from a Chainlink Oracle and compares it with the limit.
   function fund() public payable {
     uint256 usdAmount = msg.value.getEthInUsd(priceFeed);
-    require(usdAmount >= MIN_USD, "Not enough funds sent. Send more than $50 you cheap bastard.");
+    require(usdAmount >= MIN_USD, "Not enough funds sent. Send more than $10 you cheap bastard.");
 
     funderToAmount[msg.sender] += msg.value;
     if(!funderToExists[msg.sender]) {
