@@ -1,6 +1,7 @@
 node_modules
 .env
 typechain
+deployments
 
 #Hardhat files
 cache
